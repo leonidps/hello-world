@@ -1,0 +1,128 @@
+html {margin:0;padding:0;border:0;}
+body {
+    line-height:1.5;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font: normal 0.7em Arial,Helvetica,sans-serif;
+    background: #EFEFEF;
+}
+
+#page {
+    padding: 0mm 0mm 0mm 0mm;
+    width: 200mm;
+    margin: auto ;
+    background: #FFF;
+    border: 4px thin black;
+    padding: 1mm 1mm 1mm 1mm ;
+}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:2em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:1.6em;margin-bottom:0.75em;}
+h3 {font-size:1.4em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+.nodata{
+    display: none;
+}
+table {
+    border-collapse:collapse;
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    margin-left: 1mm;
+    margin-right: 1mm;
+    margin-top: 1mm;
+    margin-bottom: 1mm;
+    /*table-layout:left;*/
+    width: auto;
+    /*vertical-align: text-top;*/
+}
+
+th, td {
+    border-collapse:collapse;
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+}
+
+.carcas, table.head-recipient, table.head-recipient tbody tr td{
+    border-width:0px;
+    border-style: none;
+    /*page-break-inside: avoid;*/
+}
+.line  {
+    page-break-after: auto;
+    border-top: 1px dashed #000; /* Параметры линии */
+    height: 8px; /* Высота блока */
+    /*background: url(images/scissors.png) no-repeat 10px -18px;  Параметры фона */
+}
+.line:after { 
+    /*content: "Линия отреза";*/ 
+    font-family: Arial, sans-serif; /* Рубленый шрифт для надписи */
+    font-size: 8px; /* Размер шрифта */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+.meters {
+    width:20px;
+    text-align: center;
+    font-weight: bold;
+} 
+.saldo {
+    text-align: center;
+    font-weight: bold;
+}
+.ls_begin {
+    page-break-after: auto;
+}
+.ls_end {
+    page-break-after: always;
+}   
+.r-header {
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration:underline;
+}
+.payment {
+    border-width:0px;
+    border-style: none;
+    page-break-inside: avoid;
+}
+.payment-document {
+    page-break-inside: avoid;
+}
+.rigth-border {
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    vertical-align: top;
+}
+.none-border {
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    vertical-align: top;
+}
+.top-left-cell {
+    border-left-style: none;
+    border-top-style: none;
+    vertical-align: top;
+    width: 25%;
+}
+.top-right-cell {
+    border-right-style: none;
+    border-top-style: none;
+    vertical-align: top;
+}
+.bottom-left-cell {
+    border-left-style: none;    
+    vertical-align: top;
+    width: 25%;
+}
+.bottom-right-cell {
+    border-right-style: none;
+    vertical-align: top;
+}
